@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireMe</title>
+     <link rel="stylesheet" href="final.css">
+</head>
+ 
+<body>
+    <!-- PART 1 -SIGN IN -->
+    <div class="wrap" id="wrap">
+    <div class="panels">
+      <!-- left: sign in -->
+      <section class="panel ">
+        <header>
+          <h1>Sign In</h1>
+          <p id="emailPass">Use your email and password.</p>
+        </header>
+        <form class="form-signin" id="signInForm" autocomplete="on">
+          <input class="field" type="email" name="email" placeholder="Email" required>
+          <input class="field" type="password" name="password" placeholder="Password" minlength="6" required>
+          <button class="btn" type="submit">SIGN IN</button>
+        </form>
+      </section>
+
+      <!-- right: sign up (hidden until slide) -->
+      <section class="panel">
+        <header>
+          <h1>Create Account</h1>
+          <p id="creatingAcc">or use your email for registration</p>
+        </header>
+        <form class="form-signup" id="signUpForm" autocomplete="on">
+          <input class="field" type="text" name="name" placeholder="Name" required>
+          <input class="field" type="email" name="email" placeholder="Email" required>
+          <input class="field" type="password" name="password" placeholder="Password" minlength="6" required>
+          <button class="btn" type="submit">SIGN UP</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- purple overlay that moves left/right -->
+    <!--We used aside tag since we need to create a side bar which is the purple part-->
+    <aside class="overlay">
+      <div class="overlay-inner" id="overlayContent">
+        <h2>Hello, Friend!</h2>
+        <p>Register with your details.</p>
+        <button class="linkbtn" id="toSignUp">SIGN UP</button> 
+      </div>
+    </aside>
+  </div>
+
+  
+
+
+  <script src="final.js"></script>
+
+</body>
+</html>
